@@ -20,3 +20,6 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Apply image name changes
+        branch: feature/1  # Ensure the branch is specified
+      env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
