@@ -1,6 +1,8 @@
 name: Repository Dispatch
 
 on:
+  push:
+     branches: [feature/1]
   repository_dispatch:
     types: [new-image]
 jobs:
