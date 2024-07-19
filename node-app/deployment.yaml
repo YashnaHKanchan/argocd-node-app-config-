@@ -15,6 +15,6 @@ spec:
       containers:
         - name: node-app
           #image: gboie/examplenode-dev:4
-          image: ""
+          image: yashnah/yashna-dev:2
           ports:
             - containerPort: 3000
