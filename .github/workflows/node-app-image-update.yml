@@ -33,3 +33,8 @@ jobs:
         branch: feature/1  # Ensure the branch is specified
       env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
+
+#This workflow automatically updates the Docker image version in a Kubernetes deployment file (deployment.yaml) 
+#when changes are pushed to the feature/1 branch or when a new-image event is received. 
+#It then commits these changes back to the repository. 
+#This is crucial for ensuring that the deployment configuration is always up to date with the latest image.          
